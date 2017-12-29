@@ -1,15 +1,29 @@
-#include "stdafx.h"
 #include "GameUi.h"
-#include <Windows.h>
 
-// 窗口宽度
-int windowsWidth = 800;
-
-//窗口高度
-int windowsHight = 500;
-
-//开始创建UI
-void GameUi::start()
+GameUi::GameUi(QWidget *parent)
+: QMainWindow(parent)
 {
-	SetConsoleTitle(TEXT("贪吃蛇"));
+	ui.setupUi(this);
+}
+
+/**
+* 标题界面
+*/
+void GameUi::GameTitle()
+{
+
+}
+
+/**
+* 游戏界面
+*/
+void GameUi::GameMap()
+{
+}
+
+/**
+* 评分界面
+*/
+void GameUi::GameOver()
+{
 }
